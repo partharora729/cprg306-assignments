@@ -4,9 +4,13 @@ import StudentInfo from './student-info';
 
 export default function Page() {
   return (
-    <main>
-      <h1>Shopping List</h1>
-      <StudentInfo />
+    <main className='min-h-screen flex items-center justify-center'>
+      <div className="text-center">
+      <h1 className="text-2xl font-bold">Shopping List</h1>
+      <StudentInfo/>
+      </div>
     </main>
+  
+    // </div>
   );
 }
