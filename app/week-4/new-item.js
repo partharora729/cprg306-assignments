@@ -9,7 +9,7 @@ const NewItem = () => {
     const handleSubmit = (e) => {
          e.preventDefault();
         const item = [
-            name,
+           name,
           quantity, 
           category
             ];

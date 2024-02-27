@@ -3,7 +3,7 @@ import NewItem from './new-item';
 
 const Page = () => {
     return (
-        <div>z
+        <div>
             <NewItem />
         </div>
     );
