@@ -8,7 +8,7 @@ const page=()=>{
     const [items, setItems] = useState(ItemData);
 
     const handleAddItem = (newItem) => {
-        setItems(OldItems=>[...Olditems, newItem]); 
+        setItems(OldItems=>[...OldItems, newItem]); 
       };
 
    return( <main className='container p-4'>

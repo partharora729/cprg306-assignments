@@ -8,18 +8,18 @@ const NewItem = ({onAddItem}) => {
 
     const handleSubmit = (e) => {
          e.preventDefault();
-        const item = [
+        const item = {
            name,
           quantity, 
           category
-            ];
+        };
         console.log(item);
         onAddItem(item);
         setName('');
         setQuantity(1);
         setCategory('produce')};
     return (
-        <div className="flex justify-center items-start h-screen">
+        <div className="flex  items-start">
             <form onSubmit={handleSubmit} className="bg-blue-900 p-4 m-2 w-96">
                 <div>
                     <input type='text' value={name} placeholder='item name' onChange={(e)=>{setName(e.target.value)}} required className='text-black rounded-lg mb-2 text-l w-full h-9 placeholder:p-2' />
